@@ -92,56 +92,7 @@ getWeather= () => {
           <Text> Main Desc : { this.state.forecast.description} </Text>
         </View>
       </View>
-      <View style={styles.box4}>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={mainIcon} style={styles.icon} />
-       </View>
-          <Text> Sunrise : { this.state.forecast.sunrise} </Text>
-        </View>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={mainIcon} style={styles.icon} />
-       </View>
-          <Text> Sunset : { this.state.forecast.sunset} </Text>
-        </View>
-      </View>
-      <View style={styles.box4}>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={levelIcon} style={styles.icon} />
-       </View>
-          <Text> Pressure : { this.state.forecast.pressure} </Text>
-        </View>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={levelIcon} style={styles.icon} />
-       </View>
-          <Text> Humidity : { this.state.forecast.humidity} </Text>
-        </View>
-      </View>
-      <View style={styles.box4}>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={levelIcon} style={styles.icon} />
-       </View>
-          <Text> Sea Level : { this.state.forecast.sea_level} </Text>
-        </View>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={levelIcon} style={styles.icon} />
-       </View>
-          <Text> Ground Level : { this.state.forecast.grnd_level} </Text>
-        </View>
-      </View>
-      <View style={styles.box4}>
-        <View style={styles.button}>
-        <View style={styles.iconContainer}>
-          <Image source={windIcon} style={styles.icon} />
-       </View>
-          <Text> Wind Speed : { this.state.forecast.speed} </Text>
-        </View>
-      </View>
+      
 </View>
     );
   }
@@ -183,7 +134,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
     justifyContent: 'space-around',
     alignItems: 'center',
-    flexDirection: 'row'
+    flexDirection: 'column'
   },
   box5: {
     flex: 0.7,
@@ -191,7 +142,7 @@ const styles = StyleSheet.create({
     margin: 10
   },
   button: {
-    width: 140,
+    width: 180,
     height: 40,
     justifyContent: 'flex-start',
     alignItems: 'center',
